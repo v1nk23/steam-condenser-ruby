@@ -20,7 +20,7 @@ module SteamCondenser::Community
 
     include XMLData
 
-    AVATAR_URL = 'http://media.steampowered.com/steamcommunity/public/images/avatars/%s/%s%s.jpg'
+    AVATAR_URL = 'https://media.steampowered.com/steamcommunity/public/images/avatars/%s/%s%s.jpg'
 
     # Returns the custom URL of this group
     #
@@ -98,9 +98,9 @@ module SteamCondenser::Community
     # @return [String] The base URL for this group
     def base_url
       if @custom_url.nil?
-        "http://steamcommunity.com/gid/#@group_id64"
+        "https://steamcommunity.com/gid/#@group_id64"
       else
-        "http://steamcommunity.com/groups/#@custom_url"
+        "https://steamcommunity.com/groups/#@custom_url"
       end
     end
 

@@ -77,7 +77,7 @@ module SteamCondenser::Community
     #
     # @return [String] The URL for the game icon
     def icon_url
-      "http://media.steampowered.com/steamcommunity/public/images/apps/#@app_id/#@icon_hash.jpg"
+      "https://media.steampowered.com/steamcommunity/public/images/apps/#@app_id/#@icon_hash.jpg"
     end
 
     # Returns the leaderboard for this game and the given leaderboard ID or
@@ -100,14 +100,14 @@ module SteamCondenser::Community
     #
     # @return [String] The URL for the game logo
     def logo_url
-      "http://media.steampowered.com/steamcommunity/public/images/apps/#@app_id/#@logo_hash.jpg"
+      "https://media.steampowered.com/steamcommunity/public/images/apps/#@app_id/#@logo_hash.jpg"
     end
 
     # Returns the URL for the logo thumbnail image of this game
     #
     # @return [String] The URL for the game logo thumbnail
     def logo_thumbnail_url
-      "http://media.steampowered.com/steamcommunity/public/images/apps/#@app_id/##{@logo_hash}_thumb.jpg"
+      "https://media.steampowered.com/steamcommunity/public/images/apps/#@app_id/##{@logo_hash}_thumb.jpg"
     end
 
     # Returns the overall number of players currently playing this game
@@ -122,7 +122,7 @@ module SteamCondenser::Community
     #
     # @return [String] This game's store page
     def store_url
-      "http://store.steampowered.com/app/#@app_id"
+      "https://store.steampowered.com/app/#@app_id"
     end
 
     # Returns whether the given version of this game is up-to-date
